@@ -12,7 +12,7 @@ public class Exercicio7 {
                 a = scan.nextInt();
 
                 System.out.printf("O antecessor de %d e %d",a,a-1);
-                foi = true;
+                foi = false;
             }catch(Exception e){
                 System.out.println("Erro faca as coisas direito");
                 scan.next();

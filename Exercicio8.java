@@ -5,13 +5,15 @@ public class Exercicio8 {
         int anos = 0, meses = 0, dias = 0;
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Quantos anos vc já viveu: ");
+        System.out.println("Expresse a sua idade em anos meses e dias");
+
+        System.out.print("anos: ");
         anos = scan.nextInt();
 
-        System.out.print("Quantos meses vc já viveu: ");
+        System.out.print("meses: ");
         meses = scan.nextInt();
 
-        System.out.print("Quantos dias vc já viveu: ");
+        System.out.print("dias: ");
         dias = scan.nextInt();
 
         System.out.printf("Vc viveu %d dias\n",(anos * 365)+(meses*30)+dias);

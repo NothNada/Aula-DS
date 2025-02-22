@@ -5,9 +5,6 @@ public class Exercicio9 {
         float total_eleitores = 0, votos_brancos = 0, votos_nulos = 0, votos = 0;
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Digite o total de eleitores:");
-        total_eleitores = scan.nextFloat();
-
         System.out.print("Digite o total de votos brancos:");
         votos_brancos = scan.nextFloat();
 
@@ -16,6 +13,8 @@ public class Exercicio9 {
 
         System.out.print("Digite o total de votos confirmados:");
         votos = scan.nextFloat();
+
+        total_eleitores = votos_nulos + votos_brancos + votos;
 
         System.out.printf("A porcentagem de votos brancos: %.2f",(votos_brancos/total_eleitores)*100);
         System.out.print("%\n");

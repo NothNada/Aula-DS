@@ -8,9 +8,9 @@ public class Exercicio1{
 
         while(foi){
             try {
-                System.out.print("Digite um numero(inteiro):");
+                System.out.print("Digite um numero: ");
                 a = scan.nextInt();
-                System.out.print("Digite um numero(inteiro):");
+                System.out.print("Digite um numero: ");
                 b = scan.nextInt();
 
                 if (b == 0) {
