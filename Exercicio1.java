@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Exercicio1{
     public static void main(String[] args) {
-        int a = 0, b = 0;
+        float a = 0.0f, b = 0.0f;
         Scanner scan = new Scanner(System.in);
         boolean foi = true;
 
@@ -12,15 +12,21 @@ public class Exercicio1{
                 a = scan.nextInt();
                 System.out.print("Digite um numero(inteiro):");
                 b = scan.nextInt();
+
+                if (b == 0) {
+                    System.out.println("Erro: Divisao por zero nao e permitida. Tente novamente.");
+                    continue;
+                }
                 
-                System.out.printf("A soma de %d com %d é %d\n",a,b,(a+b));
-                System.out.printf("A subtracao de %d com %d é %d\n",a,b,(a-b));
-                System.out.printf("A multiplicacao de %d com %d e %d\n",a,b,(a*b));
-                System.out.printf("A divisao de %d com %d é %d\n",a,b,(a/b));
+                System.out.printf("A soma de %.2f com %.2f é %.2f\n",a,b,(a+b));
+                System.out.printf("A subtracao de %.2f com %.2f é %.2f\n",a,b,(a-b));
+                System.out.printf("A multiplicacao de %.2f com %.2f e %.2f\n",a,b,(a*b));
+                System.out.printf("A divisao de %.2f com %.2f é %.2f\n",a,b,(a/b));
     
                 foi = false;
             } catch (Exception e) {
-                System.out.println("Por favor faca as coisas direito seu Filho Da Puta");
+                System.out.println("Por favor faca as coisas direito");
+                scan.next();
             }
         }
 
