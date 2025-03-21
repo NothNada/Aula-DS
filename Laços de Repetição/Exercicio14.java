@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Exercicio14 {
@@ -21,9 +22,13 @@ public class Exercicio14 {
             }
         }while(Character.toLowerCase(c.charAt(0)) != 's');
 
+        Collections.sort(lista);
+
         for(int i=0;i<lista.size();i++){
             System.out.println(lista.get(i));
         }
+
+        System.out.printf("A soma do %d(maior) com %d(menor) = %d",lista.getLast(),lista.getFirst(),lista.getLast()+lista.getFirst());
 
 
         scan.close();
