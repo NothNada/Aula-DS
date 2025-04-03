@@ -9,7 +9,7 @@ public class Exercicio7 {
             System.out.print("Escreva o tamanho do lado:");
             l = scan.nextInt();
             
-        }while(l<=20 && l>=1);
+        }while(l>20 && l<1);
 
         for(int i=0;i<l;i++){
             for(int j=0;j<l;j++){
