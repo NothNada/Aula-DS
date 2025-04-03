@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercicio7 {
+public class Exercicio8 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int l = 0;
@@ -13,7 +13,16 @@ public class Exercicio7 {
         System.out.println("");
         for(int i=0;i<l;i++){
             for(int j=0;j<l;j++){
-                System.out.print("*");
+                if(i == 0 || i==l-1){
+                    System.out.print("*");
+                }else{
+                    if(j==0 || j==l-1){
+                        System.out.print("*");
+                    }else{
+                        System.out.print(" ");
+                    }
+                    
+                }
             }
             System.out.println("");
         }
