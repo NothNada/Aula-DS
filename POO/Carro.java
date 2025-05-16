@@ -41,13 +41,44 @@ public class Carro {
         return true;
     }
 
+    public void informacao(int qual){
+        switch (qual) {
+            case 1:
+                marca();
+                break;
+            case 2:
+                modeloAno();
+                break;
+            case 3:
+                velocidade();
+                break;
+        
+            default:
+                marca();
+                modeloAno();
+                velocidade();
+                break;
+        }
+    }
+
     public void informacao(){
+        marca();
+        modeloAno();
+        velocidade();
+    }
+
+    private void marca(){
         System.out.println("Marca:"+this.marca);
+    }
+
+    private void modeloAno(){
         System.out.println("Modelo:"+this.modelo);
         System.out.println("Ano:"+this.ano);
+    }
+
+    private void velocidade(){
         System.out.println("Velocidade:"+this.velocidade);
         System.out.println("Velocidade Maxima:"+this.velocidade_max);
     }
-
 
 }
