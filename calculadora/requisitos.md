@@ -3,13 +3,13 @@ Requisitos Funcionais (RF)
 
 1. RF01 – O sistema deve permitir a realização das 4 operações básicas:
 
-Adição
+- Adição
 
-Subtração
+- Subtração
 
-Multiplicação
+- Multiplicação
 
-Divisão
+- Divisão
 
 
 
